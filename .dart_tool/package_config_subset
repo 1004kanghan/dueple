@@ -1,4 +1,4 @@
-tes
+dueple
 2.7
 file:///Users/kanghan/Desktop/dueple/
 file:///Users/kanghan/Desktop/dueple/lib/
@@ -62,6 +62,10 @@ flutter_cache_manager
 2.12
 file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.0.1/
 file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.0.1/lib/
+flutter_launcher_name
+2.1
+file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_name-0.0.1/
+file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_name-0.0.1/lib/
 http
 2.12
 file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.2/
@@ -198,6 +202,10 @@ xml
 2.12
 file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.1.0/
 file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.1.0/lib/
+yaml
+2.4
+file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1/
+file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1/lib/
 sky_engine
 2.12
 file:///Users/kanghan/Developer/flutter/bin/cache/pkg/sky_engine/

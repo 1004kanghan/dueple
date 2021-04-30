@@ -98,6 +98,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_launcher_name",
+      "rootUri": "file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_name-0.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/kanghan/Developer/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -314,13 +320,19 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "tes",
+      "name": "yaml",
+      "rootUri": "file:///Users/kanghan/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "dueple",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-30T11:32:55.947762Z",
+  "generated": "2021-04-30T13:54:55.120486Z",
   "generator": "pub",
   "generatorVersion": "2.12.3"
 }
