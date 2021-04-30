@@ -1,3 +1,5 @@
+import 'package:dueple/widgets/home_screen_btn.dart';
+import 'package:dueple/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:dueple/config/palette.dart';
 
@@ -22,34 +24,22 @@ class HomeScreen extends StatelessWidget {
             centerTitle: false,
             floating: true,
             actions: [
-              Container(
-                margin: const EdgeInsets.all(6.0),
-                decoration: BoxDecoration(
-                  //밑 주석 영역 확인기능
-                  // color: Colors.grey[200],
+              //hmoe_screen_btn.dart정보로 작동되는 메뉴버튼
+              HomeScreenBtn(
+                icon: Icons.search_rounded,
+                iconSize: 30.0,
+                onPressed: () => print('검색버튼 클릭'),
                 ),
-                child: IconButton(
-                  icon: Icon(Icons.search_rounded),
-                iconSize: 30.0, 
-                color: Colors.black,
-                onPressed: () {},
+              HomeScreenBtn(
+                icon: Icons.place_rounded,
+                iconSize: 30.0,
+                onPressed: () => print('장소버튼 클릭'),
                 ),
-              ),
-              Container(
-                margin: const EdgeInsets.all(6.0),
-                decoration: BoxDecoration(
-                  //밑 주석 영역 확인기능
-                  // color: Colors.grey[200],
-                ),
-                child: IconButton(
-                  icon: Icon(Icons.place_rounded),
-                iconSize: 30.0, 
-                color: Colors.black,
-                onPressed: () {},
-                ),
-              ),
             ]
-          )
+          ),
+          SliverToBoxAdapter(
+            child: HomeScreenBanner(),
+            ),
         ],
       )
       

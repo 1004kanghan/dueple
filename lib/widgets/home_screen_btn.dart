@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:dueple/config/palette.dart';
 
@@ -20,14 +18,15 @@ class HomeScreenBtn extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(6.0),
       decoration: BoxDecoration(
-        color: Colors.grey[200],
+        //color 
+        // color: Colors.grey[200],
         shape: BoxShape.circle,
       ),
       child: IconButton(
-        icon: Icon(Icons.place_rounded),
-        iconSize: 30.0,
-        color: Palette.duepleMcolor,
-        onPressed: () {},
+        icon: Icon(icon),
+        iconSize: iconSize,
+        color: Palette.black,
+        onPressed: onPressed,
         ),      
     );
   }
