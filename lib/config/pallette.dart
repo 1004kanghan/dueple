@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+class Palette {
+//Scaffold 색상
+  static const Color scaffold = Color(0xFFF0F2F5);
+
+//Dueple 메인 브랜드 컬러
+  static const Color duepleMcolor = Color(0xFFF5B91D);
+
+//online 컬러
+static const Color online = Color(0xFFF5B91D);
+
+//그라디언트 활용 A
+  static const LinearGradient createRoomGradient = LinearGradient(
+    colors: [Color(0xFFF5B91D), Color(0xFFF5B91D)],
+  );
+
+//그라디언트 활용 B
+  static const LinearGradient storyGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Colors.transparent, Colors.black26],
+  );
+
+}
