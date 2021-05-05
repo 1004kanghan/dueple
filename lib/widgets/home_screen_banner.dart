@@ -8,8 +8,7 @@ class HomeScreenBanner extends StatefulWidget {
   HomeScreenBanner({this.items});
 
   @override
-  _HomeScreenBannerState createState() =>
-      _HomeScreenBannerState();
+  _HomeScreenBannerState createState() => _HomeScreenBannerState();
 }
 
 class _HomeScreenBannerState extends State<HomeScreenBanner> {
@@ -29,16 +28,17 @@ class _HomeScreenBannerState extends State<HomeScreenBanner> {
           width: MediaQuery.of(context).size.width,
           child: CarouselSlider(
             options: CarouselOptions(height: 200),
-            items: [1,2,3,4,5].map((i) {
+            items: [1, 2, 3, 4, 5].map((i) {
               return Builder(
                 builder: (BuildContext context) {
                   return Container(
                     width: MediaQuery.of(context).size.width,
                     margin: EdgeInsets.symmetric(horizontal: 0.0),
-                    decoration: BoxDecoration(
-                      color: Palette.banner
+                    decoration: BoxDecoration(color: Palette.banner),
+                    child: Text(
+                      '$i',
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    child: Text('text $i', style: TextStyle(fontSize: 16.0),),
                   );
                 },
               );

@@ -5,7 +5,7 @@ class HomeScreenBtn extends StatelessWidget {
   final IconData icon;
   final double iconSize;
   final Function onPressed;
-  
+
   const HomeScreenBtn({
     Key key,
     @required this.icon,
@@ -18,7 +18,7 @@ class HomeScreenBtn extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(6.0),
       decoration: BoxDecoration(
-        //color 
+        //color
         // color: Colors.grey[200],
         shape: BoxShape.circle,
       ),
@@ -27,7 +27,7 @@ class HomeScreenBtn extends StatelessWidget {
         iconSize: iconSize,
         color: Palette.black,
         onPressed: onPressed,
-        ),      
+      ),
     );
   }
 }

@@ -17,7 +17,7 @@ class Palette {
   static const Color banner = Color(0xff96925D);
 
 //online 컬러
-static const Color online = Color(0xFFF5B91D);
+  static const Color online = Color(0xFFF5B91D);
 
 //그라디언트 활용 A
   static const LinearGradient createRoomGradient = LinearGradient(
@@ -30,5 +30,4 @@ static const Color online = Color(0xFFF5B91D);
     end: Alignment.bottomCenter,
     colors: [Colors.transparent, Colors.black26],
   );
-
 }
