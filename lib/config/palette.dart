@@ -7,6 +7,12 @@ class Palette {
 //Dueple 메인 브랜드 컬러
   static const Color duepleMcolor = Color(0xFFF5B91D);
 
+//Dueple 진한 그레이 색상
+  static const Color hgrey = Color(0xFFBCBBBD);
+
+//Dueple 연한 그레이 색상
+  static const Color lgrey = Color(0xFFF4F4F4);
+
 //Black 검정색
   static const Color black = Color(0xFF000000);
 

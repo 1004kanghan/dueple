@@ -27,7 +27,8 @@ class _HomeScreenBannerState extends State<HomeScreenBanner> {
         Container(
           width: MediaQuery.of(context).size.width,
           child: CarouselSlider(
-            options: CarouselOptions(height: 200),
+            //내 키 ㅋㅋ
+            options: CarouselOptions(height: 176),
             items: [1, 2, 3, 4, 5].map((i) {
               return Builder(
                 builder: (BuildContext context) {

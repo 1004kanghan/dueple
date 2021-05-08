@@ -12,16 +12,16 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomeScreen(),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
+    SocialScreen(),
+    PlanScreen(),
+    Location(),
     Scaffold(),
   ];
   final List<IconData> _icons = const [
     Icons.home,
-    Icons.dashboard,
-    Icons.add_box,
     Icons.chat_bubble,
+    Icons.add_box,
+    Icons.place_rounded,
     Icons.person,
   ];
   int _selectedIndex = 0;
