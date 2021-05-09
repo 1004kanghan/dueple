@@ -21,7 +21,7 @@ class PlanScreen extends StatelessWidget {
                 letterSpacing: -1.2,
               ),
             ),
-            centerTitle: true,
+            // centerTitle: true,
             floating: true,
             actions: [
               //hmoe_screen_btn.dart정보로 작동되는 메뉴버튼
@@ -38,7 +38,19 @@ class PlanScreen extends StatelessWidget {
             ]),
         //베너
         // SliverToBoxAdapter(
-        //   child: HomeScreenBanner(),
+        //     child: Container(
+        //         margin: EdgeInsets.all(20),
+        //         color: Colors.white,
+        //         width: double.infinity,
+        //         child: Align(
+        //             alignment: Alignment.centerLeft,
+        //             child: Text(
+        //               '제주도 여행',
+        //               style:
+        //                   TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        //             )))),
+        // SliverToBoxAdapter(
+        //   child: PlanBanner(),
         // ),
       ],
     ));

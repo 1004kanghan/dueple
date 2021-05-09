@@ -12,14 +12,14 @@ class NavScreen extends StatefulWidget {
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomeScreen(),
-    SocialScreen(),
+    // SocialScreen(),
     PlanScreen(),
     Location(),
-    Scaffold(),
+    MyPage(),
   ];
   final List<IconData> _icons = const [
     Icons.home,
-    Icons.chat_bubble,
+    // Icons.chat_bubble,
     Icons.add_box,
     Icons.place_rounded,
     Icons.person,

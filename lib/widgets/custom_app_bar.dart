@@ -22,7 +22,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-      height: 65.0,
+      height: 60.0,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: const [
@@ -36,20 +36,20 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Expanded(
-          //   child: Text(
-          //     'Dueple',
-          //     style: const TextStyle(
-          //       color: Palette.duepleMcolor,
-          //       fontSize: 20.0,
-          //       fontWeight: FontWeight.bold,
-          //       letterSpacing: -1.2,
-          //     ),
-          //   ),
-          // ),
+          Expanded(
+            child: Text(
+              'Dueple',
+              style: const TextStyle(
+                color: Palette.duepleMcolor,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                // letterSpacing: -1.2,
+              ),
+            ),
+          ),
           Container(
             height: double.infinity,
-            width: 600.0,
+            width: 400.0,
             child: CustomTabBar(
               icons: icons,
               selectedIndex: selectedIndex,
@@ -64,15 +64,15 @@ class CustomAppBar extends StatelessWidget {
                 // UserCard(user: currentUser),
                 // const SizedBox(width: 12.0),
                 HomeScreenBtn(
-                  icon: Icons.search_rounded,
+                  icon: Icons.menu,
                   iconSize: 25.0,
-                  onPressed: () => print('Search'),
+                  onPressed: () => print('menu'),
                 ),
-                HomeScreenBtn(
-                  icon: Icons.place_rounded,
-                  iconSize: 25.0,
-                  onPressed: () => print('location'),
-                ),
+                //       HomeScreenBtn(
+                //         icon: Icons.place_rounded,
+                //         iconSize: 25.0,
+                //         onPressed: () => print('location'),
+                //       ),
               ],
             ),
           ),

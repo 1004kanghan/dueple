@@ -10,9 +10,17 @@ class HomeScreen extends StatelessWidget {
         body: CustomScrollView(
       slivers: [
         SliverAppBar(
-          // leading: Icon(Icons.menu),
           backgroundColor: Colors.white,
-          brightness: Brightness.light,
+          // title: Text(
+          //   'Dueple',
+          //   style: const TextStyle(
+          //     color: Palette.duepleMcolor,
+          //     fontSize: 28.0,
+          //     fontWeight: FontWeight.bold,
+          //     letterSpacing: -1.2,
+          //   ),
+          // ),
+          // leading: Icon(Icons.menu),
           title: Padding(
             padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
             child: Container(
@@ -38,7 +46,8 @@ class HomeScreen extends StatelessWidget {
           ),
           actions: [
             Padding(
-              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0, right: 8.0),
+              padding: const EdgeInsets.only(
+                  left: 15.0, top: 8.0, bottom: 8.0, right: 8.0),
               child: ClipRRect(
                 child: Image.asset(
                   "assets/images/avatar.png",
@@ -50,37 +59,13 @@ class HomeScreen extends StatelessWidget {
               ),
             )
           ],
-
-          // brightness: Brightness.light,
-          // backgroundColor: Colors.white,
-          // title: Text(
-          //   'Dueple',
-          //   style: const TextStyle(
-          //     color: Palette.duepleMcolor,
-          //     fontSize: 28.0,
-          //     fontWeight: FontWeight.bold,
-          //     letterSpacing: -1.2,
-          //   ),
-          // ),
-          // centerTitle: true,
-          // floating: true,
-          // actions: [
-          //   //hmoe_screen_btn.dart정보로 작동되는 메뉴버튼
-          //   HomeScreenBtn(
-          //     icon: Icons.search_rounded,
-          //     iconSize: 25.0,
-          //     onPressed: () => print('검색버튼 클릭'),
-          //   ),
-          //   HomeScreenBtn(
-          //     icon: Icons.place_rounded,
-          //     iconSize: 25.0,
-          //     onPressed: () => print('장소버튼 클릭'),
-          //   ),
-          // ]
         ),
         //베너
         SliverToBoxAdapter(
           child: HomeScreenBanner(),
+        ),
+        SliverToBoxAdapter(
+          child: HomeScreenMenu(),
         ),
       ],
     ));

@@ -21,7 +21,7 @@ class Location extends StatelessWidget {
                 letterSpacing: -1.2,
               ),
             ),
-            centerTitle: true,
+            // centerTitle: true,
             floating: true,
             actions: [
               //hmoe_screen_btn.dart정보로 작동되는 메뉴버튼

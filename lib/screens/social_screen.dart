@@ -6,22 +6,59 @@ import 'package:dueple/config/palette.dart';
 class SocialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var tabbarController;
     return Scaffold(
         body: CustomScrollView(
       slivers: [
         SliverAppBar(
             brightness: Brightness.light,
             backgroundColor: Colors.white,
-            title: Text(
-              '실시간 피드',
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                letterSpacing: -1.2,
-              ),
+            bottom: TabBar(
+              controller: tabbarController,
+              isScrollable: true,
+              indicatorColor: Palette.duepleMcolor,
+              indicatorSize: TabBarIndicatorSize.label,
+              indicatorWeight: 3,
+              tabs: <Widget>[
+                Tab(
+                    child: Text(
+                  '나의 모임',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                  // style: TextStyle(color: tabbarController.index == 0
+                  // ? Color( widget.colorVal) : Colors.amber, fontSize: 18.0, fontWeight: FontWeight.bold),
+                )),
+                Tab(
+                    child: Text(
+                  '실시간 소셜',
+                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                )),
+                Tab(
+                    child: Text(
+                  '3',
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+                )),
+                Tab(
+                    child: Text(
+                  '4',
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+                )),
+                Tab(
+                    child: Text(
+                  '5',
+                  style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+                )),
+              ],
             ),
-            centerTitle: true,
+            // title: Text(
+            //   '소셜',
+            //   style: const TextStyle(
+            //     color: Colors.black,
+            //     fontSize: 20.0,
+            //     fontWeight: FontWeight.bold,
+            //     letterSpacing: -1.2,
+            //   ),
+            // ),
+            // centerTitle: true,
             floating: true,
             actions: [
               //hmoe_screen_btn.dart정보로 작동되는 메뉴버튼
